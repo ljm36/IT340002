@@ -1,0 +1,64 @@
+    1  ls
+    2  cd Lab1
+    3  ls
+    4  rm Labcat.txt
+    5  ls
+    6  cat > Labcat.txt
+    7  ls
+    8  cat Labcat.txt
+    9  ls
+   10  stat file10.txt
+   11  ls -l file10.txt
+   12  ls -l file8.txt
+   13  ls -l intro5.txt
+   14  stat file8.txt
+   15  stat intro5.txt
+   16  cd ..
+   17  logout
+   18  ls
+   19  cd Lab1
+   20  ls
+   21  cat file10.txt
+   22  ls -c file10.txt
+   23  ls -u file10.txt
+   24  stat file10.txt
+   25  stat file8.txt
+   26  stat intro5.txt
+   27  stat something1.txt
+   28  stat test6.txt
+   29  ls
+   30  stat word9.txt
+   31  stat file4.txt
+   32  ls
+   33  stat intro2.txt
+   34  stat something7.txt
+   35  stat word3.txt
+   36  ls
+   37  cat something1.txt > Labcat.txt
+   38  cat Labcat.txt
+   39  cat something1.txt
+   40  cat intro2.txt > Labcat.txt
+   41  cat word3.txt > Labcat.txt
+   42  cat file4.txt > Labcat.txt
+   43  cat intro5.txt > Labcat.txt
+   44  cat test6.txt > Labcat.txt
+   45  cat something7.txt > Labcat.txt
+   46  cat file8.txt > Labcat.txt
+   47  cat word9.txt > Labcat.txt
+   48  cat file10.txt > Labcat.txt
+   49  cat Labcat.txt
+   50  cat something1.txt >> Labcat.txt
+   51  cat Labcat.txt
+   52  cat something1.txt > Labcat.txt
+   53  cat Labcat.txt
+   54  cat intro2.txt >> Labcat.txt
+   55  cat word3.txt >> Labcat.txt
+   56  cat file4.txt >> Labcat.txt
+   57  cat intro5.txt >> Labcat.txt
+   58  cat test6.txt >> Labcat.txt
+   59  cat something7.txt >> Labcat.txt
+   60  cat file8.txt >> Labcat.txt
+   61  cat word9.txt >> Labcat.txt
+   62  cat file10.txt >> Labcat.txt
+   63  cat Labcat.txt
+   64  history > history.txt
