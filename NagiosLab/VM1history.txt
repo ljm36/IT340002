@@ -1,0 +1,175 @@
+    1  logout
+    2  sudo apt update
+    3  sudo apt upgrade
+    4  logout
+    5  sudo apt update
+    6  sudo apt install autoconf gcc make unzip libgd-dev libmcrypt-dev dc snmp libnet-snmp-perl gettext
+    7  cd ~
+    8  curl -L -O https://github.com/NagiosEnterprises/nagioscore/archive/nagios-4.4.5.tar.gz
+    9  tar zxf nagios-4.4.5.tar.gz
+   10  cd nagioscore-nagios-4.4.5
+   11  ./configure --with-httpd-conf=/etc/apache2/sites-enabled
+   12  make all
+   13  sudo make install-groups-users
+   14  sudo make install
+   15  sudo make install-daemoninit
+   16  sudo make install-commandmode
+   17  sudo make install-config
+   18  sudo make install-webconf
+   19  sudo a2enmod rewrite
+   20  ls
+   21  cat /etc/apache2/apache2.conf
+   22  ls -al /etc/apache2
+   23  ls
+   24  cd ..
+   25  ls
+   26  sudo apt install apache2
+   27  ls
+   28  cd nagioscore-nagios-4.4.5
+   29  sudo make install-webconf
+   30  sudo a2enmod rewrite
+   31  sudo a2emmod cgi
+   32  sudo a2enmod cgi
+   33  sudo usermod -a -G nagios www-data
+   34  sudo htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+   35  sudo systemct1 restart apache2
+   36  sudo systemctl restart apache2
+   37  cd ~
+   38  curl -L -O https://nagios-plugins.org/download/nagios-plugins-2.3.2.tar.gz
+   39  tar zxf nagios-plugins-<^>2.3.2<^.tar.gz
+   40  ls
+   41  ls
+   42  sudo update
+   43  sudo apt-get update
+   44  ls
+   45  sudo apt-get install -y autoconf gcc libc6 make wget apache2 php libapache2-mod-php7.2 libgd-dev
+   46  ls
+   47  tar zxf nagios-plugins-2.3.2.tar.gz
+   48  cd nagios-plugins-2.3.2.tar.gz
+   49  ls
+   50  cd nagios-plugins-2.3.2
+   51  ./configure
+   52  make
+   53  sudo make install
+   54  cd ~
+   55  curl -L -O https://github.com/NagiosEnterprises/nrpe/releases/download/nrpe-4.0.0.tar.gz
+   56  tar zxf nrpe-4.0.0.tar.gz
+   57  ls
+   58  curl -L -O https://github.com/NagiosEnterprises/nrpe/releases/download/nrpe-3.2.1/nrpe-3.2.1.tar.gz
+   59  curl -L -O https://github.com/NagiosEnterprises/nrpe/releases/download/nrpe-4.0.0.tar.gz
+   60  tar zxf nrpe-4.0.0.tar.gz
+   61  curl -L -O https://github.com/NagiosEnterprises/nrpe/releases/download/nrpe-3.2.1.tar.gz
+   62  tar zxf nrpe-3.2.1.tar.gz
+   63  curl -L -O https://github.com/NagiosEnterprises/nrpe/releases/download/nrpe-4.0.0.tar.gz
+   64  tar zxf nrpe-4.0.0.tar.gz
+   65  ls
+   66  rm nrpe-3.2.1.tar.gz
+   67  ls
+   68  tar /gxvf nrpe-4.0.0.tar.gz
+   69  ls
+   70  sudo tar zxf nrpe-4.0.0.tar.gz
+   71  curl -L -O https://github.com/NagiosEnterprises/nrpe/releases/download/nrpe-4.0.0.tar.gz
+   72  ls
+   73  rm nrpe-4.0.0.tar.gz
+   74  ls
+   75  curl -L -O https://github.com/NagiosEnterprises/nrpe/releases/download/nrpe-4.0.0.tar.gz
+   76  ls
+   77  rm nrpe-4.0.0.tar.gz
+   78  curl -L -O https://github.com/NagiosEnterprises/nrpe/releases/download/nrpe-4.0.0/nrpe-4.0.0.tar.gz
+   79  ls
+   80  tar zxf nrpe-4.0.0.tar.gz
+   81  cd nrpe-4.0.0
+   82  ./configure
+   83  make check_nrpe
+   84  sudo make install-plugin
+   85  sudo nano /usr/local/nagios/etc/nagios.cfg
+   86  sudo mkdir /usr/local/nagios/etc/servers
+   87  sudo nano /usr/local/nagios/etc/objects/contacts.cfg
+   88  sudo nano /usr/local/nagios/etc/objects/commands.cfg
+   89  sudo systemctl start nagios
+   90  dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
+   91  host myip.opendns.com resolver1.opendns.com
+   92  sudo nano /usr/local/nagios/etc/objects/commands.cfg
+   93  ping 8.8.8.8
+   94  cd~
+   95  cd ..
+   96  sudo apt-get install -y autoconf gcc libc6 libmcrypt-dev make libssl-dev wget bc gawk dc build-essential snmp libnet-snmp-perl gettext
+   97  sudo apt-get update
+   98  sudo apt-get install -y libpqxx3-dev
+   99  sudo apt-get install -y libdsi-dev
+  100  sudo apt-get install -y liblap2-dev
+  101  sudo apt-get install -y libmysqlclient-dev
+  102  sudo apt-get install -y dnsutils
+  103  sudo apt-get install -y smbclient
+  104  sudo apt-get install -y qstat
+  105  sudo apt-get install -y fping
+  106  sudo apt-get install -y qmail-tools
+  107  ls
+  108  cd /tmp/nagios-plugins-release-2.3.2/
+  109  sudo apt-get install -y libpqxx3-dev
+  110  sudo apt-get install -y libdbi -dev
+  111  sudo apt-get install -y libdbi-dev
+  112  sudo apt-get install -y libldap2-dev
+  113  ls
+  114  cd nagios-plugins-2.3.2
+  115  sudo ./tools/setup
+  116  cd ~
+  117  sudo apt-get install -y autoconf gcc libc6 make wget unzip apache2 php libapache2-mod-php7.2 libgd-dev
+  118  ls
+  119  cd nagioscore-nagios-4.4.5
+  120  sudo ./configure --with-httpd-conf=/etc/apache2/sites-enabled
+  121  sudo make all
+  122  make test
+  123  dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
+  124  cd ~
+  125  sudo ufw allow apache
+  126  sudo ufw reload
+  127  sudo ufw allow apache
+  128  sudo ufw reload
+  129  sudo make install-webconf
+  130  ls
+  131  sudo a2enmod rewrite
+  132  sudo a2enmod cgi
+  133  systemctl restart apache2
+  134  sudo systemctl restart apache2
+  135  sudo ufw allow apache
+  136  sudo ufw reload
+  137  ls
+  138  cd nrpe-4.0.0
+  139  cd ~
+  140  service iptables status
+  141  sudo service iptables status
+  142  service ip6tables status
+  143  sudo dpkg -l selinux*
+  144  sudo make install
+  145  sudo make install HTML
+  146  curl https://127.0.0.1/
+  147  dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
+  148  curl http://71.127.223.186/
+  149  hostname /I
+  150  hostname -I
+  151  ls
+  152  cd nrpe-4.0.0
+  153  cd ~
+  154  sudo usermod -a -G nagios www-data
+  155  sudo htpassw -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+  156  cd nagioscore-nagios-4.4.5
+  157  sudo ufw allow apache
+  158  sudo ufw reload
+  159  sudo usermod -a -G nagios www-data
+  160  sudo systemctl restart apache2
+  161  cd ~
+  162  dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
+  163  logout
+  164  ls
+  165  cd nrpe-4.0.0
+  166  logout
+  167  git clone https://github.com/ljm36/IT340002.git
+  168  ls
+  169  cd IT340002
+  170  ls
+  171  mkdir NagiosLab
+  172  ls
+  173  cd ~
+  174  history
+  175  history > VM1history.txt
