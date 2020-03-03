@@ -1,0 +1,11 @@
+Vagrant.configure("2") do |config|
+  config.vm.provision "shell", inline: "echo Hello"
+
+  config.vm.define "Nagios" do |web|
+   web.vm.box = "bento/ubuntu-18.04"
+  end
+
+  config.vm.define "Monitor" do |db|
+    db.vm.box = "bento/ubuntu-18.04"
+  end
+end
