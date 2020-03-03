@@ -1,0 +1,76 @@
+    1  logout
+    2  sudo useradd nagios
+    3  sudo apt update
+    4  sudo apt upgrade
+    5  cd ~
+    6  curl -L -O https://nagios-plugins.org/download/nagios-plugins-2.3.2.tar.gz
+    7  tar zxf nagios-plugins-2.3.2.tar.gz
+    8  cd nagios-plugins-2.3.2
+    9  ./configure
+   10  cd ~
+   11  sudo apt install autoconf gcc libmcrypt-dev make libssl-dev wget dc build-essential gettext
+   12  cd nagios-plugins-2.3.2
+   13  ./configure
+   14  make
+   15  sudo make install
+   16  cd ~
+   17  url -L -O https://github.com/NagiosEnterprises/nrpe/releases/download/nrpe-4.0.0/nrpe-4.0.0.tar.gz
+   18  curl -L -O https://github.com/NagiosEnterprises/nrpe/releases/download/nrpe-4.0.0/nrpe-4.0.0.tar.gz
+   19  tar zxf nrpe-4.0.0.tar.gz
+   20  cd nrpe-4.0.0
+   21  ./configure
+   22  make nrpe
+   23  sudo make install-daemon
+   24  sudo make install-config
+   25  sudo make install-init
+   26  df -h /
+   27  sudo nano /usr/local/nagios/etc/nrpe.cfg
+   28  sudo /dev/hda1
+   29  /ved/hdal
+   30  /dev/hdal
+   31  sudo nano /usr/local/nagios/etc/nrpe.cfg
+   32  /dev/hda1
+   33  cd 
+   34  /dev/hda1
+   35  cd nrpe-4.0.0
+   36  df -h /
+   37  sudo nano /usr/local/nagios/etc/nrpe.cfg
+   38  cd ~
+   39  cd nrpe-4.0.0
+   40  sudo nano /usr/local/nagios/etc/nrpe.cfg
+   41  sudo systemctl start nrpe.service
+   42  sudo systemctl status nrpe.service
+   43  sudo ufw allow 5666/tcp
+   44  cd ~
+   45  sudo nano /usr/local/nagios/etc/nrpe.cfg
+   46  hostname -I
+   47  sudo nano /usr/local/nagios/etc/nrpe.cfg
+   48  sudo systemctl start nrpe.service
+   49  sudo systemctl status nrpe.service
+   50  sudo ufw allow 80/tcp
+   51  sudo system stop nrpe.service
+   52  sudo systemctl stop nrpe.service
+   53  sudo systemctl status nrpe.service
+   54  sudo systemctl start nrpe.service
+   55  sudo systemctl status nrpe.service
+   56  sudo systemctl stop nrpe.service
+   57  sudo systemctl status nrpe.service
+   58  sudo ufw allow 80/tcp
+   59  sudo systemctl start nrpe.service
+   60  sudo systemctl status nrpe.service
+   61  sudo ufw status numbered
+   62  sudo nano /usr/local/nagios/etc/nrpe.cfg
+   63  sudo apt install ufw
+   64  sudo nano /etc/default/ufw
+   65  sudo ufw default deny incoming
+   66  sudo ufw default allow outgoing
+   67  sudo ufw allow ssh
+   68  sudo ufw allow 22
+   69  sudo ufw allow 80
+   70  sudo ufw enable
+   71  sudo ufw status verbose
+   72  sudo nano /etc/default/ufw
+   73  sudo nano /usr/local/nagios/etc/nrpe.cfg
+   74  ls
+   75  history
+   76  history > VM2history.txt
