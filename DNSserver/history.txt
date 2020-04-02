@@ -1,0 +1,64 @@
+    1  sudo apt install -y bind9 bind9utils bind9-doc dnsutils
+    2  ifconfig
+    3  echo 192.168.1.194 > myip
+    4  cat myip
+    5  sudo nano /etc/bind/named.conf.local
+    6  sudo cp /etc/bind/dc.local /etc/bind/forward.it340.local.db
+    7  sudo cp /etc/bind/db.local /etc/bind/forward.it340.local.db
+    8  sudo nano /etc/bind/forward.it340.local.db
+    9  myip
+   10  cat myip
+   11  sudo nano /etc/bind/forward.it340.local.db
+   12  sudo nano /etc/bind/named.conf.local
+   13  sudo nano /etc/bind/forward.it340.local.db
+   14  sudo named-checkzone it340.local /etc/bind/forward.it340.local.db
+   15  sudo cp /etc/bind/db.127 /etc/bind/reverse.hostname.local.db
+   16  sudo cp /etc/bind/db.127 /etc/bind/reverse.it340.local.db
+   17  sudo nano /etc/bind/reverse.hostname.local.db
+   18  sudo named-checkconf
+   19  sudo named-checkzone it340.local /etc/bind/forward.it340.local.db
+   20  sudo nano /etc/bind/reverse.it340.local.db
+   21  sudo named-checkconf
+   22  sudo named-checkzone it340.local /etc/bind/forward.it340.local.db
+   23  sudo cp /etc/bind/db.127 /etc/bind/reverse/it340.local.db
+   24  cat myip
+   25  named-checkzone 192.168.1.194.in-addr.arpa /etc/bind/reverse.it340.local.db
+   26  sudo cp /etc/bind/db.127 /etc/bind/reverse.it340.local.db
+   27  sudo nano /etc/bind/reverse/it340/local.db
+   28  sudo nano /etc/bind/reverse/it340.local.db
+   29  sudo nano /etc/bind/reverse.it340.local.db
+   30  sudo named-checkconf
+   31  sudo named-checkzone it340.local /etc/bind/forward.it340.local.db
+   32  sudo systemctl restart bind9
+   33  sudo systemctl enable bind9
+   34  sudo systemctl status bind9
+   35  sudo named-checkzone it340.local /etc/bind/forward.it340.local.db
+   36  sudo nano /etc/bind/reverse.it340.local.db
+   37  sudo nano /etc/bind/named.conf.local
+   38  cat myip
+   39  sudo nano /etc/bind/named.conf.local
+   40  sudo named-checkzone it340.local /etc/bind/forward.it340.local.db
+   41  sudo cp /etc/bind/db.local /etc/bind/forward.hostname.local.db
+   42  sudo cp /etc/bind/db.local /etc/bind/forward.it340.local.db
+   43  sudo nano /etc/bind/forward.it340.local.db
+   44  sudo cp /etc/bind/db.127 /etc/bind/reverse.it340.local.db
+   45  sudo nano /etc/bind/reverse.it340.local.db
+   46  sudo named-checkconf
+   47  sudo named-checkzone it340.local /etc/bind/forward.it340.local.db
+   48  named-checkzone 192.168.1.194
+   49  named-checkzone 192.168.1.194.in-addr.arpa /etc/bind/reverse.it340.local.db
+   50  sudo systemctl restart bind9
+   51  sudo systemctl enable bind9
+   52  sudo systemctl status bind9
+   53  sudo nano /etc/resolv.conf
+   54  dig www.it340.local
+   55  dig -x 192.168.1.194
+   56  git clone https://github.com/ljm36/IT340002.git
+   57  ls
+   58  cd IT340002
+   59  ls
+   60  mkdir DNSserver
+   61  ls
+   62  cd ..
+   63  ls
+   64  history > history.txt
