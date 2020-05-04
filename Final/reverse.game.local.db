@@ -1,0 +1,23 @@
+$TTL 604800
+@ IN SOA game.local. root.game.local. (
+3 ; Serial
+604800 ; Refresh
+86400 ; Retry
+2419200 ; Expire
+604800 ) ; Negative Cache TTL
+;
+;@ IN NS localhost.
+;1.0.0 IN PTR localhost.
+
+;Name Server Information
+
+@ IN NS ns1.game.local.
+
+;Reverse lookup for Name Server
+
+10 IN PTR ns1.game.local.
+
+;PTR Record IP address to HostName
+
+100 IN PTR www.game.local.
+150 IN PTR mail.game.local.
