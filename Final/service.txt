@@ -1,0 +1,11 @@
+[Service]
+ExecStart=/home/vagrant/time.sh
+Restart=always
+WorkingDirectory=/home/vagrant
+User=root
+
+[Install]
+WantedBy=multi-user.target
+
+
+
